@@ -1,3 +1,20 @@
-# Nginx Directory Index
+# Nginx AutoIndex
 
-Just the default nginx image but with autoindex on
+A branch of nginx:latest with autoindex on.
+Serves all files in `/usr/share/nginx/html`
+
+#### nginx:latest
+    
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+    
+
+#### jrelva/nginx-autoindex:latest
+    
+    location / {
+        root   /usr/share/nginx/html;
+        autoindex on;
+    }
+    
