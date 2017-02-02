@@ -1,5 +1,7 @@
 # Nginx AutoIndex
 
+Forked from https://bitbucket.org/jrelva/docker-nginx-index
+
 A branch of nginx:latest with autoindex on.
 Serves all files in `/usr/share/nginx/html`
 
@@ -11,7 +13,7 @@ Serves all files in `/usr/share/nginx/html`
     }
     
 
-#### jrelva/nginx-autoindex:latest
+#### kwiesmueller/nginx-autoindex:latest
     
     location / {
         root   /usr/share/nginx/html;
